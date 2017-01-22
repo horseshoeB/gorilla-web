@@ -1,0 +1,31 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">Gorilla Web</span>
+    </div>
+    <div class="collapse navbar-collapse">
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+  <div class="text-left">
+    <div class="page-header">
+      <h2>Study Commands Top</h2>
+      <!--
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML
+      document.
+    </p>
+    -->
+    </div>
+    <p *ngFor="let category of categories" class="lead"><a href="#">{{category.name}}</a></p>
+  </div>
+
+</div>
+<!-- /.container -->
