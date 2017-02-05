@@ -2,3 +2,7 @@
 body {
   padding-top: 50px;
 }
+
+.table-column__base {
+  cursor: pointer;
+}

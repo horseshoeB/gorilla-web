@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import './rxjs-extensions';
-
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
 
@@ -12,6 +11,8 @@ import { TopComponent } from './top/top.component';
 import { CategoriesService } from './shared/services/categories.service';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { CommandsModule } from './commands/commands.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommandsModule
   ],
   providers: [
     CategoriesService

@@ -17,7 +17,7 @@ export class TopComponent implements OnInit {
   ngOnInit() {
     this.categoriesService.getCategories().subscribe(data => {
       this.categories = data;
-    });
+    });//TODO error handling
 
   }
 

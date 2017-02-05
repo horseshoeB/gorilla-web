@@ -1,0 +1,14 @@
+<!-- Wrap all page content here -->
+<div id="wrap">
+  <!-- nav-bar -->
+  <app-nav-bar [categories]="categories"></app-nav-bar>
+  <!-- Begin page content -->
+  <div class="container">
+    <div class="page-header">
+      <h1>{{category.name}} Commands</h1>
+    </div>
+
+    <app-command-table [commandItems]="commandItems"></app-command-table>
+
+  </div>
+</div>
